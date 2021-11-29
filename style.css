@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6f6f6;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    font-size: 14px;
+}
+
+/* first page  */
+
+.my_quiz_app{
+    width: 300px;
+    background: #fff;
+    border-radius: 20px;
+    height: 500px;
+    box-shadow: 0px 1px 17px 5px #e5e4e4;
+}
+
+.my_quiz_app .image{
+    margin: 20px 0;
+}
+
+.text{
+    padding: 20px;
+}
+
+.text h3{
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+.text p{
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+
+.my_btn button{
+    background: #F56B00;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    color: #fff;
+    float: right;
+    border-radius: 25px 0px 25px 0px;
+}
+
+.my_btn button:hover{
+    background: lightseagreen;
+}
+
+/* second page */
+
+.rules_box{
+    width: 300px;
+    height: 500px;
+    background: #fff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 1px 17px 5px #e5e4e4;
+
+}
+
+.rules_title{
+    padding: 10px 20px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+.rules_list{
+    padding: 0px 20px
+}
+
+.rules_list ol{
+    margin-left: 10px;
+}
+
+.rules_list ol li{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+span.highlight{
+    color: rgb(0, 119, 255);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons .exit_quiz{
+    background: #F56B00;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    color: #fff;
+    float: right;
+    border-radius: 0px 25px 0px 25px;
+}
+
+.buttons .continue{
+    background: #F56B00;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 25px 0px 25px 0px;
+}
+
+.continue:hover{
+    background: lightseagreen;
+}
+
+.exit_quiz:hover{
+    background: rgba(255, 0, 0, 0.808);
+}
+
+
+/* third page */
+
+
+.quiestions_box{
+    width: 300px;
+    height: 500px;
+    background: #fff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quiestions_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.time_count{
+    display: flex;
+    padding: 5px;
+}
+
+.time_left{
+    background: rgba(58, 127, 255, 0.582);
+    border-radius: 2px;
+    padding: 0 5px;
+    color: #fff;
+}
+
+.seconds{
+    background: rgba(0, 0, 0, 0.685);
+    color: #fff;
+    padding: 0px 5px;
+    border-radius: 2px;
+
+}
+
+.time_line{
+    height: 2px;
+    width: 100%;
+    background: rgb(0, 119, 255);
+}
+
+.section{
+    padding: 0 20px;
+}
+
+
+.section h3{
+    margin-bottom: 10px;
+}
+
+
+.section .my_options .option{
+    padding: 10px 10px;
+    background: rgba(0, 140, 255, 0.212);
+    margin: 10px 0px;
+    border: 1px solid rgba(12, 189, 12, 0.589);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s;
+    border-radius: 3px;
+}
+
+.section .my_options .option:hover{
+    background: lightskyblue;
+    border: 1px solid rgb(165, 165, 165);
+
+}
+
+.section .my_options .option span{
+    font-size: 14px;
+}
+
+.questions_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+    border-top: 1px solid rgb(194, 194, 194);
+}
+
+
+.questions_footer .nxt_btn button{
+    background: #F56B00;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 25px 0px 25px 0px;
+}
+
+.questions_footer .nxt_btn button:hover{
+    background: lightseagreen;
+}
