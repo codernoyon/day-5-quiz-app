@@ -13,7 +13,7 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 img{
@@ -33,6 +33,12 @@ p{
     height: 500px;
     box-shadow: 0px 1px 17px 5px #e5e4e4;
 }
+
+.my_quiz_app.inactive_my_quiz_app{
+    display: none;
+}
+
+
 
 .my_quiz_app .image{
     margin: 20px 0;
@@ -75,11 +81,15 @@ p{
     height: 500px;
     background: #fff;
     border-radius: 25px;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0px 1px 17px 5px #e5e4e4;
+    display: none;
 
+}
+
+.rules_box.active_rules_box{
+    display: flex;
 }
 
 .rules_title{
@@ -147,9 +157,13 @@ span.highlight{
     height: 500px;
     background: #fff;
     border-radius: 25px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.quiestions_box.questions_box_active{
+    display: flex
 }
 
 .quiestions_header{
