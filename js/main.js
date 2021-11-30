@@ -20,12 +20,28 @@ continueBtn.onclick = () => {
     questionBox.classList.add('questions_box_active');
     rulesBox.classList.remove('active_rules_box');
     myQuizApp.classList.add('inactive_my_quiz_app');
-    showQuestions(1);
+    showQuestions(0);
 }
 
 
+const nextBtn = document.querySelector('.nxt_btn button');
+
+let questionCount = 0;
+
+nextBtn.onclick = () => {
+    if (questionCount < questions.length - 1) {
+        questionCount++;
+        showQuestions(questionCount);       
+    } else {
+        console.log("You have complete your Task 🥰");
+    }
+
+}
+
+
+
 function showQuestions(index) {
-    const mainQuestion = document.querySelector('.main_question');
+    const mainQuestion = document.querySelector('.main_question'); // main quention here
     let  queTag = "<span>" + questions[index].numb + "." + questions[index].question + "</span>";
     mainQuestion.innerHTML = queTag; //main question here
     const optionList = document.querySelector('.my_options'); //option list here
@@ -33,6 +49,10 @@ function showQuestions(index) {
     +'<div class="option">' + questions[index].options[1] + '</div>'
     +'<div class="option">' + questions[index].options[2] + '</div>'
     +'<div class="option">' + questions[index].options[3] + '</div>'
-    
     optionList.innerHTML = optionTag;
+
+
+    const totalQuestion = document.querySelector('.total_question');
+    let totalQuestionTag = '<p>' + questions[index].numb + ' Of 5 Question' + '</p>';
+    totalQuestion.innerHTML = totalQuestionTag;
 }
